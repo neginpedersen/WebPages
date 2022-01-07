@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Tangerine" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+   
+<style type="text/css">
+* {
+   margin: 0;
+   padding: 0;
+   font-family: 'Lato', sans-serif;
+   box-sizing: border-box;
+}
+
+.contianer {
+max-width: 1170px;
+margin: 0 auto;
+}
+  
+  .menu-items {
+line-height: 60px;
+font-size: 18px;
+display: inline-block;
+list-style: none
+
+ }
+ .flex-col-cont {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+ }
+
+.flex-cont {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+ }
+
+.header-cont {
+  color:white;
+  position: fixed;
+  top: 0;
+  left:0;
+  width: 100%;
+  font-weight:white;
+}
+
+ .header-img {
+  padding: 15%;
+  text-align: center; 
+  background-image: url('header.jpg');
+  background-repeat: none;
+  background-attachment: scroll;
+  background-position: center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+  text-align: center;
+  color: #fff;
+}
+
+ .header-img h2 {
+  font-weight: 30px;
+}
+
+.main-header li{
+  padding: 0 20px;
+  font-size: 2vh;
+}
+
+.logo {
+  line-height: 70px;
+  font-weight: bold;
+  font-size: 5vh;
+}
+
+.service span.icons {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: 2px solid #f8f8f8;
+  display: block;
+  position: relative;
+  margin: 0 auto;
+}
+.service span.icons:hover{
+  border-color:#191E34;
+
+}
+
+.fa:hover {
+  color:#191E34;
+
+}
+
+.service span i {
+  font-size: 36px;
+  line-height: 102px;
+  margin: 0;
+}
+
+.fa {
+  display: inline-block;
+  font: normal normal normal 14px/1 FontAwesome;
+  font-size: 14px;
+  line-height: 1;
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: #414859;
+}
+.service {
+  flex-basis: 350px;
+  text-align: center;
+  font-size: 18px;
+  color: #414859;
+}
+
+.service a, a:link, a:visited {
+  text-decoration: none;
+  color: #414859;
+  cursor: default;
+}
+.services-cont {
+  max-width: 100%;
+}
+.services-list span {
+  font-family: 'tangerine',cursive;
+  font-size:20px;
+  margin: 0 auto;
+}
+.services-list {
+  padding: 10% 5%;
+  text-align: center;
+}
+.services-header {
+  margin-bottom: 20px;  
+}
+.services-header h2 {
+  color: #414859;
+}
+.services-header span {
+  font-size:35px;
+  color: #414859;
+}
+.clip-svg {
+-webkit-clip-path: polygon(17% 0, 100% 1%, 100% 100%, 68% 100%);
+clip-path: polygon(17% 0, 100% 1%, 100% 100%, 68% 100%);  
+background-color: #DB4834;
+width: 100%;
+height:668px;
+position: absolute;
+top: 0;
+left: 0;
+}
+
+.glass-cont {
+  position: relative;
+  overflow: hidden;
+}
+.discount-cont {
+  flex-flow: column nowrap;
+  margin: 12% 6% 5% 65%;
+  display: flex;
+  color: white;
+  font-size:30px;
+  text-align: center;
+  max-width: 900px;
+  padding: 5px 10px;
+  color: #414859;
+  letter-spacing: 1px;
+}
+
+.world-wide-cont {
+  padding: 5% 0 5% 0;
+
+}
+.world-wide-text {
+  flex-basis: 60%;
+  padding: 6%;
+  font-size:24px;
+  color: #414859;
+  letter-spacing: 2px;
+}
+.paralex-cont{
+  background: url(party.jpeg);
+  background-attachment:fixed;
+  height:300px;
+}
+.paralex-text{
+  color: white;
+  text-align: center;
+  padding-top: 5%;
+}
+.paralex-text p {
+  line-height: 68px;
+  font-size:38px;
+}
+.paralex-text a {
+  text-decoration: none;
+  line-height: 50px;
+  padding: 15px 25px;
+  text-transform: uppercase;
+  background-color: white;
+  margin-top: 10%;
+  border-radius: 2px;
+}
+.alaki {
+  width: 400px;
+  height: 600px;
+}
+.grid-cont {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 50% 50%;
+  margin: 5% 0;
+}
+.contact-text {
+ grid-column: 1 / 3;
+ grid-row: 1 / 2;
+ text-align: center;
+ font-size: 28px;
+}
+.contact-info-cont {
+grid-column: 1/2;
+grid-row: 2/2;
+}
+.contact-info-cont ul li{ list-style: none; }
+.contact-form-cont{
+grid-column: 2/2;
+grid-row: 2/2;
+}
+.form-element{
+  box-sizing: border-box;
+  width: 45%;
+  padding: 10px 20px;
+  background-color:white;
+  margin: 15px 10px;
+  border: 1px solid #ddd;
+}
+
+.full-width {
+  width: 100%;
+}
+</style>
+</head>
+<body>
+<div class="header-cont"> 
+<div class="contianer">
+  <div class="flex-cont">
+ <div class="logo">Logo</div> 
+<nav>
+   <ul class="main-header">
+      <li class="menu-items">Home</li>
+      <li class="menu-items">Login</li>
+      <li class="menu-items">Register</li>
+      <li class="menu-items">About us</li>
+   </ul>
+</nav>
+</div>
+</div>
+</div> 
+<section>
+  <div class="header-img">
+    <div class="contianer">
+       <h2 style="font-size:7vh;font-weight: lighter;">Welcome to the Club</h2>
+       <p style="font-family:'tangerine',cursive;font-size:8vh;">consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+    </div>  
+  </div>
+</section>
+<section>
+  <div class="services-list"> 
+    <div class="services-header">
+
+  <h2>Phasellus convallis dictum turpis</h2>  
+  <span>Quisque varius finibus lectus a consequat. Donec aliquam, ante eu fringilla condimentum, mi mi aliquet velit, ut luctus purus neque et quam. </span>
+  </div>
+<div class="flex-cont services-cont">
+  
+          <div class="service">
+            <span class="icons">
+              <i class="fa fa-aw fa-bolt fa-3x"></i>
+            </span>
+            <h5><a title="Active Support" href="https://demo.themegrill.com/ample/active-support/"> Active Support</a></h5>
+            <p>Maecenas facilisis augue vitae convallis hendrerit. In convallis quam nulla, id suscipit enim egestas vitae. Fusce feugiat eros sit amet venenatis scelerisque. Proin neque leo, cursus molestie</p>
+          </div>
+          <div class="service">
+            <span class="icons">
+            <i class="fa fa-aw fa-mobile fa-3x"></i>
+            </span>
+            <h5><a title="Responsive Design" href="https://demo.themegrill.com/ample/responsive-design/"> Responsive Design</a></h5>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc at eros egestas, lobortis lectus ac, ornare magna. Nulla sit amet nibh varius sem dictum cursus a in ligula. Mauris ipsum neque, tempor vitae</p>
+          </div>
+          <div class="service">
+            <span class="icons">
+              <i class="fa fa-aw fa-star fa-3x"></i>
+            </span>
+            <h5><a title="Robust Features" href="https://demo.themegrill.com/ample/robust-features/"> Robust Features</a></h5>
+            <p>Fusce justo metus, facilisis vel odio lacinia, mattis tincidunt eros. Morbi a eleifend sapien, vel accumsan purus. Quisque tristique purus non elementum posuere. Pellentesque massa odio</p>
+          </div>
+          <div class="service">
+            <span class="icons">
+              <i class="fa fa-aw fa-star fa-3x"></i>
+            </span>
+            <h5><a title="Robust Features" href="https://demo.themegrill.com/ample/robust-features/"> Robust Features</a></h5>
+            <p>Fusce justo metus, facilisis vel odio lacinia, mattis tincidunt eros. Morbi a eleifend sapien, vel accumsan purus. Quisque tristique purus non elementum posuere. Pellentesque massa odio</p>
+          </div>
+</div>
+</div>
+</section>
+<section>
+  <div class="glass-cont">
+    <img src="glass.jpeg" width="1300px" height="auto">
+    <div class="clip-svg">
+      <div class="discount-cont">
+        <h2>Wine Discount Package</h2>
+        <p style='font-size:20px;'>Fusce ligula enim, aliquet a malesuada at, sagittis et dolor. Praesent ipsum dui, rhoncus a interdum vitae, volutpat quis mauris. Nam molestie elit ac blandit efficitur. </p>
+        <span>6 Month Validity</span>
+        <span> 100$</span>
+    </div>
+    </div>
+    
+  </div>
+</section>
+<section>
+  <div class="contianer">
+    <div class="flex-col-cont world-wide-cont">
+      <div class="world-wide-text">
+        <h3>Guests from world Wide</h3>
+        Etiam eu turpis eget nibh pretium laoreet in at neque. Morbi auctor nec massa vitae dapibus. Maecenas laoreet pellentesque mauris ac efficitur. Nullam vitae tortor sit amet orci gravida molestie. Integer sed enim viverra, vestibulum odio eget, suscipit justo. Nulla facilisi.
+      </div>      
+      <div class="world-wide-image">
+        <img src="collage.jpg" width="450px">
+      </div>      
+    </div>
+  </div>
+</section>
+<section>
+  <div class="paralex-cont">
+    <div class="paralex-text">
+      <p>You can have your parties and all in our place</p>
+      <a href="#">Contact Us</a>
+    </div>
+  </div>
+</section>
+<section>
+  <div class="contianer">
+    <div class="contact grid-cont">
+      <div class="contact-text">
+      <h3>Contact Us</h3>
+      <p>We would love to hear from you</p>
+      </div>
+    <div class="contact-info-cont">
+      <ul>
+        <li><i class="fa fa-phone" style="padding-right: 8px;"></i><a href="#">91959699</a></li>
+        <li><i class="fa fa-home" style="padding-right: 8px;"></i><a href="#">Address: Bøstrup Strandvej 14, 5953 Tranekær</a></li>
+        <li><i class="fa fa-envelope" style="padding-right: 8px;"></i><a href="#">negin@dpsoft.dk</a></li>
+      </ul>
+    </div>
+    <div class="contact-form-cont">
+      <form>
+        <input type="text" name="name" class="form-element" placeholder="Name">
+        <input type="email" name="email" class="form-element" placeholder="Email">
+        <input type="subjet" name="subject" class="form-element" placeholder="Subject">
+        <input type="phone" name="phone" class="form-element" placeholder="Phone">
+        <textarea placeholder="message"  class="form-element" name="message"></textarea>
+        <button class="form-element full-width"> Send</button>
+      </form>
+    </div>
+    </div>
+  </div>
+
+</section>
+</body>
+</html>
